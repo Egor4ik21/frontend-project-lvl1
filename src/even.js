@@ -1,19 +1,19 @@
-import readlineSync from "readline-sync";
-import { userName, getRandomNumber } from "./index.js";
+import readlineSync from 'readline-sync';
+import { userName, getRandomNumber } from './index.js';
 
 const rounds = 3;
 
-console.log("Answer \"yes\" if the number is even, otherwise answer \"no\".");
+console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
 const checkEven = () => {
   for (let i = 1; i <= rounds; i += 1) {
     const number = getRandomNumber(1, 100);
     console.log(`Question: ${number}`);
 
-    const askAnswer = readlineSync.question("Your answer: ");
+    const askAnswer = readlineSync.question('Your answer: ');
     if (number % 2 === 0) {
-      if (askAnswer === "yes") {
-        console.log("Correct!");
+      if (askAnswer === 'yes') {
+        console.log('Correct!');
       } else {
         console.log(`'${askAnswer}' is wrong answer ;(. Correct answer was 'yes'`);
         console.log(`Let's try again, ${userName}`);
@@ -22,8 +22,8 @@ const checkEven = () => {
     }
 
     if (number % 2 !== 0) {
-      if (askAnswer === "no") {
-        console.log("Correct!");
+      if (askAnswer === 'no') {
+        console.log('Correct!');
       } else {
         console.log(`'${askAnswer}' is wrong answer ;(. Correct answer was 'no'`);
         console.log(`Let's try again, ${userName}`);
