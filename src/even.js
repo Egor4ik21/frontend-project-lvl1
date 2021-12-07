@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+// eslint-disable-next-line import/named
 import { userName, getRandomNumber } from './index.js';
 
 const rounds = 3;

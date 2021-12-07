@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import checkEven from '../src/even.js';
+// eslint-disable-next-line import/no-unresolved
+import checkEven from '../src /even.js';
 
 checkEven();

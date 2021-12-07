@@ -1,17 +1,20 @@
+/* eslint-disable import/named */
 import readlineSync from 'readline-sync';
 import { userName, getRandomNumber } from './index.js';
 
 const rounds = 3;
+// edit rounds count
 
 console.log('What is the result of the expression?');
+// Pronounce the rules
 
 const calc = () => {
   for (let i = 1; i <= rounds; i += 1) {
     const operations = ['+', '-', '*'];
     const getRandomOperator = operations[Math.floor(Math.random() * operations.length)];
 
-    const number1 = getRandomNumber(1, 100);
-    const number2 = getRandomNumber(1, 100);
+    const number1 = getRandomNumber(1, 25);
+    const number2 = getRandomNumber(1, 25);
 
     let getRandomOperation;
 
