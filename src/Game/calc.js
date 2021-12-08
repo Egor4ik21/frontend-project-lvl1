@@ -1,6 +1,6 @@
 /* eslint-disable import/named */
 import readlineSync from 'readline-sync';
-import { userName, getRandomNumber } from './index.js';
+import { userName, getRandomNumber } from '../index.js';
 
 const rounds = 3;
 // edit rounds count
