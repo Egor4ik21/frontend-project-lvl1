@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import searchProgressing from '../src/Game/progression.js';
+import searchProgressing from '../src/game/progression.js';
 
 searchProgressing();
