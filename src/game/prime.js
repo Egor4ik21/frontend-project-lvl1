@@ -26,7 +26,7 @@ const primeGame = () => {
         console.log('Correct!');
       } else {
         console.log(`${askAnswer}' is wrong answer Correct answer was 'yes'`);
-        console.log(`Let's try again, ${userName}`);
+        console.log(`Let's try again, ${userName}!`);
         return;
       }
     }
@@ -35,7 +35,7 @@ const primeGame = () => {
         console.log('Correct!');
       } else {
         console.log(`${askAnswer}' is wrong answer Correct answer was 'no'`);
-        console.log(`Let's try again, ${userName}`);
+        console.log(`Let's try again, ${userName}!`);
         return;
       }
     }
